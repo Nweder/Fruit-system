@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <title>Fruktkorg Göteborg</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    input, select, button { display:block; margin:10px 0; padding:10px; width:300px; }
+    button { background: green; color:white; border:none; }
+  </style>
+</head>
+<body>
+
+<h1>Beställ fruktkorg 🍎</h1>
+<p>Leverans inom 24h i Göteborg</p>
+
+<form action="https://formsubmit.co/DINMAIL@gmail.com" method="POST">
+  
+  <input type="text" name="Företag" placeholder="Företag" required>
+  <input type="email" name="Email" placeholder="Email" required>
+
+  <select name="Produkt">
+    <option>Small - 199 kr</option>
+    <option>Medium - 299 kr</option>
+    <option>Large - 399 kr</option>
+  </select>
+
+  <!-- viktigt -->
+  <input type="hidden" name="_subject" value="Ny beställning!">
+  <input type="hidden" name="_captcha" value="false">
+
+  <!-- redirect efter submit -->
+  <input type="hidden" name="_next" value="https://din-sida.se/tack.html">
+
+  <button type="submit">Beställ</button>
+</form>
+
+</body>
+</html>
